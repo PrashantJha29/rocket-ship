@@ -5,8 +5,60 @@
 - `src_*` = new snapshot/delta
 - Foundry: `@transform`, `Input`, `Output` used as standard
 - Code is illustrative, not full error-handled implementations
+   
+---   
+    
+## TL;DR
+```mermaid
+flowchart LR
+    A["Source Systems (Snapshots / Deltas / CDC)"]
 
----
+    A --> B["Raw Ingested Datasets (Immutable)"]
+
+    B --> C["Unified Transform Layer (SQL / PySpark / Code Workbook)"]
+    C --> D["SCD Logic per Dimension (Type 0–6)"]
+
+    D --> E["Versioned Dimension Datasets"]
+    D --> F["Downstream Fact Tables / Marts / Apps"]
+
+    E --> G["Lineage Graph"]
+    F --> G
+
+    G --> H["Impact Analysis (Change Propagation)"]
+    G --> I["Auditability & Explainability"]
+
+    E --> J["Recomputation Engine"]
+    J --> K["Automatic Dependency Aware Rebuilds"]
+
+    E --> L["Fine-Grained Access Control"]
+    F --> L
+
+    subgraph "Foundry Platform Capabilities"
+        C
+        D
+        E
+        F
+        G
+        J
+        H
+        I
+        K
+        L
+    end
+
+    H --> M["Safer SCD Refactoring vs. Manual Orchestration"]
+    I --> N["Stronger Regulatory / Compliance Support"]
+    K --> O["Less Pipeline Glue vs. ADF / Glue / Composer"]
+    L --> P["Consistent Security vs. Fragmented IAM"]
+
+    M --> Q["Operational Advantage for SCD0–SCD6"]
+    N --> Q
+    O --> Q
+    P --> Q
+```
+
+  
+--- 
 
 ## SCD Type 0 – Fixed (no changes)
 
@@ -69,6 +121,10 @@ Foundry value vs others:
 - Native dependency graph and versioned datasets make point-in-time reconstruction possible even though Type 1 logic overwrites.
 - No need to combine separate job schedulers (e.g., ADF + Databricks + external lineage); Foundry handles orchestration and lineage in one system.
 
+```mermaid
+
+```
+
 ### Insurance example (policyholder email)
 
 ```python
@@ -113,6 +169,10 @@ Concept:
 Foundry value vs others:
 - Full lineage graph shows the entire history pipeline (raw → SCD2 → marts) without manual metadata wiring (as with Glue/Databricks/ADF).
 - Built-in recomputation semantics mean schema/logic changes automatically propagate; in cloud-native stacks, this usually requires explicit job orchestration and dependency management.
+
+```mermaid
+
+```
 
 ### Insurance example (policy address history)
 
@@ -185,6 +245,10 @@ Foundry value vs others:
 - Easy to maintain both Type 3 dim and a parallel SCD2 reference pipeline for validation because of shared computation graph.
 - Centralized access control and object model; no need to federate IAM/policies across separate services.
 
+```mermaid
+
+```
+
 ### Insurance example (customer segment current/previous)
 
 ```python
@@ -247,6 +311,10 @@ Foundry value vs others:
 - Cross-dataset lineage makes current/history relationships explicit without custom metadata.
 - Dataset versioning supports audit/regulatory use cases with minimal additional engineering compared to piecing together logs/Delta history across tools.
 
+```mermaid
+
+```
+
 ### Insurance example (agent commission plan history)
 
 ```python
@@ -306,7 +374,11 @@ Concept:
 Foundry value vs others:
 - Graph view shows multi-hop relationships (source → mini-dim → core dim → fact marts) without building a separate metadata layer.
 - Reuse of the same mini-dimension in many downstream contexts is handled by dependency graph; in cloud platforms this often requires explicit coordination across multiple jobs and services.
+  
+```mermaid
 
+```
+  
 ### Insurance example (policy core + behavior mini-dim)
 
 ```python
@@ -371,6 +443,10 @@ Concept:
 Foundry value vs others:
 - Complex SCD6 pipelines remain inspectable via a single graph; attribute behavior can be traced back to source and logic directly.
 - Versioned logic and data make it easier to compare different SCD strategies over time and revert if needed, without stitching together multiple data lake / job history systems.
+
+```mermaid
+
+```
 
 ### Insurance example (customer address SCD2, name Type1)
 
