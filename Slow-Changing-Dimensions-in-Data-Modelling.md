@@ -8,9 +8,8 @@ title: "Slow Changing Dimensions - A Palantir Foundry Perspective"
 
 # Slow Changing Dimensions <br/> A **Palantir Foundry** Perspective
           
-## Collab     
-1. [Prashant Jha](https://github.com/PrashantJha29), [LinkedIn](https://www.linkedin.com/in/prashantjha29/)    
-2. [Anudeep Chatradi](https://github.com/anudeepchatradi), [LinkedIn](https://www.linkedin.com/in/anudeep-chatradi-78757298/)    
+## Collab         
+[Anudeep Chatradi](https://github.com/anudeepchatradi), [LinkedIn](https://www.linkedin.com/in/anudeep-chatradi-78757298/)    
     
      
 #### Housekeeping stuff
