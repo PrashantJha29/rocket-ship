@@ -639,16 +639,7 @@ High-level Foundry advantages across all SCD types:
 
 ## Appendix — Practical Additions
 
-### Table of contents
-- TL;DR
-- SCD Type 0–6 (examples)
-- Decision matrix
-- Implementation checklist
-- Testing & validation
-- Operational considerations
-- Performance & scalability
-- Reusable SCD utilities
-- References
+  
 
 ### Glossary / conventions
 - prev_dim_*: previous snapshot of the dimension
