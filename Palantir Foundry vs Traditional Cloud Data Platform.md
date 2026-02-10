@@ -27,7 +27,6 @@ Approach B — Traditional Cloud Data Platforms
 Service-driven, tool-centric, loosely integrated.
 This document compares both across architecture, pipeline development, governance, security, and operational usage.
 
-
 ## Architecture Philosophy
 Palantir Foundry:-
 Foundry provides a single integrated data operating system:
