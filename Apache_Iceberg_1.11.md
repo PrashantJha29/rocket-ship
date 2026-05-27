@@ -92,6 +92,7 @@ This causes slower reads and higher metadata overhead.
 
 Example
 Suppose a data file contains:
+
 | Position | Customer |
 |----------|----------|
 | 0 | A |
