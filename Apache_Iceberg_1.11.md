@@ -90,7 +90,8 @@ Over time, these delete files keep increasing. During query execution, the engin
 - all associated delete files
 This causes slower reads and higher metadata overhead.
 
-Example
+Example:
+
 Suppose a data file contains:
 
 | Position | Customer |
@@ -128,6 +129,7 @@ Deletion vectors store deleted row positions using a Roaring Bitmap inside a Puf
 - RLE/Runs (consecutive deletes)
 
 Example: Same data file
+
 | Position | Customer |
 |----------|----------|
 | 0 | A |
@@ -143,6 +145,7 @@ During query execution:
 - Skips deleted rows
 	
 Returned result:
+
 | Position | Customer |
 |----------|----------|
 | 0 | A |
