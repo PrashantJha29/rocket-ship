@@ -1,4 +1,14 @@
-# AI in Underwriting: From Administrative Burden to Strategic Advantage
+# AI in Underwriting: Reshaping Risk Assessment and Decision-Making
+
+---
+
+## Contributors:
+1. [Nilesh Saraf](https://github.com/nileshsaraf56), [LinkedIn](https://www.linkedin.com/in/nilesh-saraf-8b7aa327b/)
+2. [Shishupal Kumar](https://github.com/shishupalamigo), [LinkedIn](https://www.linkedin.com/in/shishupalamigo/)
+3. [Nikhil KG](https://github.com/nikhilkg18), [LinkedIn](https://www.linkedin.com/in/nikhil-k-g)
+4. [Shouvik Karfa](https://github.com/ShouvikKarfa), [LinkedIn](https://www.linkedin.com/in/shouvikkarfa/)
+
+---
 
 For decades, underwriting has been built on a combination of data, experience, and professional judgment. Underwriters assess risks, determine appropriate pricing, and decide whether a policy aligns with an insurer's risk appetite. While the fundamentals of underwriting remain unchanged, the volume of information that needs to be reviewed has grown dramatically.
 
@@ -6,6 +16,7 @@ Today, underwriters often find themselves working through large submission packa
 
 Rather than replacing underwriting expertise, AI has the potential to strengthen it by bringing together data, surfacing insights, and supporting more consistent decision-making.
 
+---
 ## Where AI Fits Into the Underwriting Process
 
 One of the biggest challenges in underwriting is the sheer amount of information involved in assessing a risk. Valuable data exists across policy systems, claims platforms, third-party databases, inspection reports, financial records, and many other sources. Bringing all of this together and extracting meaningful insights can be time-consuming.
@@ -16,6 +27,7 @@ For example, AI-powered models can identify risk patterns from historical portfo
 
 In practical terms, this means underwriters can focus more on complex cases and less on administrative tasks.
 
+---
 ## Improving Risk Assessment
 
 At its core, underwriting is about understanding risk. The better an insurer can assess risk, the better positioned it is to price policies accurately and maintain a profitable portfolio.
@@ -24,6 +36,7 @@ AI can strengthen this process by identifying relationships within data that may
 
 This does not eliminate the need for human judgment. Instead, it gives underwriters additional information that can support their decisions and improve consistency across teams.
 
+---
 ## Faster Decisions, Better Customer Experience
 
 Speed has become an important differentiator in the insurance market. Brokers and customers increasingly expect faster quotes and quicker policy decisions.
@@ -32,6 +45,7 @@ When underwriters spend less time gathering information and reviewing documents,
 
 The result is not only greater efficiency for underwriting teams but also a better experience for customers and distribution partners.
 
+---
 ## The Business Impact
 
 The benefits of AI extend beyond operational improvements.
@@ -48,6 +62,7 @@ Perhaps most importantly, AI allows underwriting teams to scale more effectively
 
 In an increasingly competitive market, this can create a meaningful strategic advantage.
 
+---
 ## Governance Cannot Be an Afterthought
 
 As promising as AI may be, it also introduces new responsibilities.
@@ -60,6 +75,7 @@ Transparency becomes especially important as regulators continue to pay closer a
 
 The goal should not be fully automated underwriting at any cost. Instead, organizations should focus on building systems that combine technological capabilities with human accountability.
 
+---
 ## Risks and Challenges
 
 Like any major technology initiative, AI adoption comes with challenges.
@@ -70,7 +86,8 @@ There is also the risk of overreliance on technology. AI should support underwri
 
 Organizations that approach AI with a clear governance framework and realistic expectations are generally better positioned to realize long-term value while minimizing these risks.
 
-## Why Palantir Foundry and AIP Matter
+---
+## Value of Palantir Foundry and AIP
 
 While discussions around AI often focus on models and algorithms, many organizations discover that the real challenge lies elsewhere. Data is fragmented across systems, processes are disconnected, and valuable insights struggle to reach operational teams.
 
@@ -88,6 +105,7 @@ What makes this particularly valuable is that the underwriter remains in control
 
 That balance between AI assistance and human oversight is likely to be one of the defining characteristics of successful underwriting organizations in the years ahead.
 
+---
 ## Final Thoughts
 
 The future of underwriting is unlikely to be fully manual or fully automated. It will be a combination of experienced professionals supported by intelligent technology.
