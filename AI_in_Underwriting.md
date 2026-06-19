@@ -106,6 +106,11 @@ What makes this particularly valuable is that the underwriter remains in control
 That balance between AI assistance and human oversight is likely to be one of the defining characteristics of successful underwriting organizations in the years ahead.
 
 ---
+## Summary
+
+![AI in Underwriting](images/AI_in_Underwriting_image.png)
+
+---
 ## Final Thoughts
 
 The future of underwriting is unlikely to be fully manual or fully automated. It will be a combination of experienced professionals supported by intelligent technology.
