@@ -92,12 +92,14 @@ This causes slower reads and higher metadata overhead.
 
 Example
 Suppose a data file contains:
+
 | Position | Customer |
 |----------|----------|
 | 0 | A |
 | 1 | B |
 | 2 | C |
 | 3 | D |
+
 
 If rows at positions 1 and 3 are deleted at different times:
 - Delete file 1 → position 1
@@ -127,12 +129,14 @@ Deletion vectors store deleted row positions using a Roaring Bitmap inside a Puf
 - RLE/Runs (consecutive deletes)
 
 Example: Same data file
+
 | Position | Customer |
 |----------|----------|
 | 0 | A |
 | 1 | B |
 | 2 | C |
 | 3 | D |
+
 
 Suppose, rows 1 and 3 are deleted. Conceptually the deletion vector stores [1, 3] using a Roaring Bitmap.
 
@@ -142,10 +146,12 @@ During query execution:
 - Skips deleted rows
 	
 Returned result:
+
 | Position | Customer |
 |----------|----------|
 | 0 | A |
 | 2 | C |
+
 
 Benefits of Deletion Vector:
 - No delete file accumulation 
