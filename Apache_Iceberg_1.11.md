@@ -101,6 +101,7 @@ Suppose a data file contains:
 | 2 | C |
 | 3 | D |
 
+
 If rows at positions 1 and 3 are deleted at different times:
 - Delete file 1 → position 1
 - Delete file 2 → position 3
@@ -137,6 +138,7 @@ Example: Same data file
 | 2 | C |
 | 3 | D |
 
+
 Suppose, rows 1 and 3 are deleted. Conceptually the deletion vector stores [1, 3] using a Roaring Bitmap.
 
 During query execution:
@@ -150,6 +152,7 @@ Returned result:
 |----------|----------|
 | 0 | A |
 | 2 | C |
+
 
 Benefits of Deletion Vector:
 - No delete file accumulation 
